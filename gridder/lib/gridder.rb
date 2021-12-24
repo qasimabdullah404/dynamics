@@ -3,14 +3,14 @@
 #                                             right or down in the grid #
 # Returns number of steps to reach to end of the grid                   #
 #########################################################################
-# def gridder rows, columns                                             #
-# 	return 0 if rows == 0 or columns == 0                               #
-# 	return 1 if rows == 1 and columns == 1                              #
-# 	return 1 if rows == 1 and columns == 2                              #
-# 	return 1 if rows == 2 and columns == 1                              #
-#                                                                       #
-# 	return gridder(rows -1, columns) + gridder(rows, columns - 1)       #
-# end                                                                   #
+# def gridder rows, columns                                      
+# 	return 0 if rows == 0 or columns == 0                        
+# 	return 1 if rows == 1 and columns == 1                       
+# 	return 1 if rows == 1 and columns == 2                       
+# 	return 1 if rows == 2 and columns == 1                       
+#                                                                
+# 	return gridder(rows -1, columns) + gridder(rows, columns - 1)
+# end                                                            
 #########################################################################
 
 ##############################################################################################
