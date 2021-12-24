@@ -1,0 +1,7 @@
+os: linux
+dist: focal
+language: ruby
+ruby:
+  - 2.7.5
+  - 3.0.3
+script: true
