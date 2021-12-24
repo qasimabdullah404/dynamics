@@ -1,6 +1,6 @@
 #########################################################################
 # Gridder using classic recusrion approach, constraints - can only move #
-#                                             right or down in the grid #
+#                                             down or right in the grid #
 # Returns number of steps to reach to end of the grid                   #
 #########################################################################
 # def gridder rows, columns                                      
@@ -14,8 +14,8 @@
 #########################################################################
 
 ##############################################################################################
-# Gridder using memoization using same constraints
-# Returns number of steps to reach endpoint
+# Gridder using memoization - constraints: can only move down or right in the grid
+# Returns number of steps to reach at the end of grid if movement is within constraints
 ##############################################################################################
 def gridder rows, columns, memoized = Hash.new
 	key = "#{rows},#{columns}"
