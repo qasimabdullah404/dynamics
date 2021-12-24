@@ -4,4 +4,10 @@ language: ruby
 ruby:
   - 2.7.5
   - 3.0.3
-script: true
+script:
+  - cd $TRAVIS_BUILD_DIR/fibonacci-sequence
+  - bundle install
+  - bundle exec rspec --format documentation
+  - cd $TRAVIS_BUILD_DIR/gridder
+  - bundle install
+  - bundle exec rspec --format documentation
